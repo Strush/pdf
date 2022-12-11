@@ -1,0 +1,295 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+/* General */
+.mb-12 {
+  margin-bottom: 12px;
+}
+.py-12 {
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
+}
+.w-44 {
+  width: 44px;
+}
+.h-44 {
+  height: 44px;
+}
+label {
+  cursor: pointer;
+}
+.pointer {
+  cursor: pointer;
+}
+.dark-blue {
+  color: #00008b;
+}
+.bg-dark-blue {
+  background-color: #183153 !important;
+}
+.bg-gray {
+  background-color: #ccc;
+}
+.bg-dark-green {
+  background-color: #54b435;
+}
+.orange {
+  color: orange;
+}
+.title {
+  font-size: 20px !important;
+  font-weight: 700;
+}
+.subtitle {
+  font-size: 18px;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Components */
+.custom__button {
+  width: 200px;
+  height: 42px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: orange;
+  color: #fff;
+  border: none;
+  position: relative;
+  outline: none;
+  font-size: 18px;
+  font-weight: 700;
+  overflow: hidden;
+}
+.custom__button::before {
+  content: "";
+  right: -5px;
+  position: absolute;
+  width: 20px;
+  height: 110%;
+  background-color: #fff;
+  transform: rotate(10deg);
+}
+
+.custom__input {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.custom__input input {
+  border: 1.6px solid #183153;
+}
+.custom__input input:focus {
+  outline: none;
+}
+.custom__input::before {
+  content: "";
+  right: -5px;
+  position: absolute;
+  width: 20px;
+  height: 110%;
+  border: 1.6px solid #fff;
+  background-color: #fff;
+  border-left-width: 1.6px;
+  border-left-color: #183153;
+  transform: rotate(7deg);
+}
+
+.selected__option {
+  color: #fff;
+  text-align: center;
+}
+.card__option::before {
+  content: "";
+  top: -2px;
+  right: -15px;
+  position: absolute;
+  width: 20px;
+  height: 110%;
+  background-color: #fff;
+  transform: rotate(5deg);
+}
+.selected__option .form-check-input {
+  height: 100%;
+  position: absolute;
+  margin-top: 0 !important;
+  margin-left: 0 !important;
+  cursor: pointer;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.part__circle {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 50%;
+  transform: translateY(-50%) rotate(90deg);
+  width: 330px;
+  height: 100px;
+  border: solid 5px #000;
+  border-color: #000 transparent transparent transparent;
+  border-radius: 50%/100px 100px 0 0;
+}
+/* Open Modal button */
+.tooltip-button {
+  outline: none;
+}
+.info-icon {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 3px;
+  cursor: pointer;
+  right: 8px;
+  background: orange;
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.info-icon i {
+  font-size: 12px;
+}
+
+.remove-button {
+  font-size: 24px;
+}
+.app {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.small-block {
+  max-width: 620px;
+  margin: 0 auto !important;
+}
+.selected__option label {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+.selected__option input {
+  opacity: 0;
+}
+
+/* Modal  Options*/
+.modal__options {
+  position: relative;
+}
+.modal__options .modal-dialog {
+  max-width: 900px !important;
+}
+.modal__options .modal-content {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.modal__options .modal__option div:last-of-type,
+.modal__options ul li:last-child {
+  margin-bottom: 0 !important;
+}
+
+.close__modal {
+  position: absolute;
+  right: -18px;
+  top: -15px;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  z-index: 99;
+}
+.close__modal:active {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+.active__option {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  left: -22px;
+}
+
+.modal__options ul p {
+  padding: 5px 5px 5px 30px;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+.curved__line {
+  height: 100%;
+  width: 300px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 78%;
+  overflow: hidden;
+  transform: rotate(180deg);
+}
+.curved__line::before {
+  height: 133%;
+  width: 133%;
+  border-radius: 50%;
+  border: solid 3px #ccc;
+  display: block;
+  position: absolute;
+  top: -18%;
+  left: 0;
+  content: "";
+}
+.modal__options ul li:nth-child(2) {
+  margin-left: 30px;
+}
+.modal__options ul li:nth-child(3) {
+  margin-left: 45px;
+}
+.modal__options ul li:nth-child(4) {
+  margin-left: 46px;
+}
+.modal__options ul li:nth-child(5) {
+  margin-left: 40px;
+}
+.modal__options ul li:last-child {
+  margin-left: 16px;
+}
+
+.box {
+  padding: 40px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 5px;
+}
+
+.rows__box {
+  max-width: 800px;
+  margin: 0 auto;
+  min-height: 200px;
+}
+
+/* Add option page */
