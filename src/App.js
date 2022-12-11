@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import { useContext } from "react";
+import { Form } from "react-bootstrap";
+import AddOption from "./screens/AddOption";
+import SelectOption from "./screens/SelectOption";
+import { Store } from "./Store";
 
 function App() {
+  const { state } = useContext(Store);
+  const { isShow } = state;
+  console.log(state, "state");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className="container">
+        <Form className="rows__box box">
+          <h3 className="mb-4">
+            It is a long established fact that a reader will be distracted by
+            the readable content
+          </h3>
+
+          {isShow ? <AddOption /> : <SelectOption />}
+        </Form>
+      </div>
     </div>
   );
 }
