@@ -4,154 +4,148 @@ export const options = [
     label: "Licensing",
     variation: [
       {
-        id: 1,
-        label:
-          "Define standards and regulations for licensing related to <dynamic>",
+        id: "define-quality",
+        label: "Defining quality standards",
       },
-      { id: 2, label: "Monitor and enforce licensing related to <dynamic>" },
+      {
+        id: "establish-monitoring",
+        label: "Establish monitoring and enforcement",
+      },
     ],
-    active: [1, 3],
+    info: "Specifying required program features or required knowledge/credentials/degrees of professional staff through licensing and then monitoring programs to ensure compliance",
   },
   {
     id: 2,
     label: "Regulations",
     variation: [
       {
-        id: 1,
-        label: "Define standards for regulations related to <dynamic>",
+        id: "define-quality",
+        label: "Defining quality standards",
       },
-      { id: 2, label: "Monitor and enforce regulations related to <dynamic>" },
+      {
+        id: "establish-monitoring",
+        label: "Establish monitoring and enforcement",
+      },
     ],
-    active: [1, 2, 4],
+    info: "Specifying required program features through program regulation and then monitoring programs to ensure compliance",
   },
   {
     id: 3,
     label: "Accreditation",
     variation: [
       {
-        id: 1,
-        label: "Define standards for regulations related to <dynamic>",
+        id: "define-quality",
+        label: "Defining quality standards",
       },
-      { id: 2, label: "Monitor and enforce regulations related to <dynamic>" },
+      {
+        id: "establish-monitoring",
+        label: "Establish monitoring and enforcement",
+      },
+      {
+        id: "improve-workforce",
+        label: "Improve workforce development supports",
+      },
     ],
-    active: [1, 3],
+    info: "Using an independent accreditation process to evaluate multiple program features against standards that are associated with highquality programs",
   },
   {
     id: 4,
     label: "Case Reviews (audits)",
     variation: [
       {
-        id: 1,
-        label: "Case Reviews standards for regulations related to <dynamic>",
+        id: "define-quality",
+        label: "Defining quality standards",
       },
       {
-        id: 2,
-        label: "Case Reviews and enforce regulations related to <dynamic>",
+        id: "build-data",
+        label: "Build data and measurement systems",
       },
       {
-        id: 3,
-        label: "It is a long established fact that a reader will be distracted",
+        id: "establish-monitoring",
+        label: "Establish monitoring and enforcement",
+      },
+      {
+        id: "improve-workforce",
+        label: "Improve workforce development supports",
       },
     ],
-    active: [1, 2, 3],
+    info: "Individual cases are sampled from case records and are reviewed for consistency with evidence-based practices",
   },
   {
     id: 5,
     label: "Financing",
     variation: [
       {
-        id: 1,
-        label: "Financing standards for regulations related to <dynamic>",
+        id: "define-quality",
+        label: "Defining quality standards",
       },
       {
-        id: 2,
-        label: "Financing and enforce regulations related to <dynamic>",
+        id: "build-data",
+        label: "Build data and measurement systems",
       },
       {
-        id: 3,
-        label: "It is a long established fact that a reader will be distracted",
+        id: "establish-monitoring",
+        label: "Establish monitoring and enforcement",
+      },
+      {
+        id: "administer-financing",
+        label: "Administer financing mechanisms",
       },
     ],
-    active: [1, 4],
+    info: "Providing financing mechanisms (e.g., a tiered reimbursement system) tied to achieving higher standards (e.g., accreditation) or quality ratings",
   },
   {
     id: 6,
     label: "Program Evaluation",
     variation: [
       {
-        id: 1,
-        label: "Program Evaluation for regulations related to <dynamic>",
+        id: "define-quality",
+        label: "Defining quality standards",
       },
       {
-        id: 2,
-        label:
-          "Program Evaluation and enforce regulations related to <dynamic>",
+        id: "build-data",
+        label: "Build data and measurement systems",
+      },
+      {
+        id: "establish-monitoring",
+        label: "Establish monitoring and enforcement",
+      },
+      {
+        id: "enhance-quality",
+        label: "Enhance quality improvement supports",
       },
     ],
-    active: [1, 5],
+    info: "Periodically evaluating programs in terms of measured childdevelopmental outcomes to determine if quality goals are achieved",
   },
   {
     id: 7,
     label: "Publicizing",
     variation: [
       {
-        id: 1,
-        label: "Publicizing for regulations related to <dynamic>",
+        id: "define-quality",
+        label: "Defining quality standards",
       },
       {
-        id: 2,
-        label: "Publicizing and enforce regulations related to <dynamic>",
+        id: "establish-monitoring",
+        label: "Establish monitoring and enforcement",
       },
     ],
-    active: [1, 3, 4],
+    info: "Making information about quality available to the public in an accessible and transparent way, whether as licensing outcomes (status, inspections, and violations), accreditation status, or ratings",
   },
   {
     id: 8,
     label: "Ratings",
     variation: [
       {
-        id: 1,
-        label:
-          '<u>Define quality standards</u> for rating system that avour the inclusion of <dynamic> in services provided"',
+        id: "define-quality",
+        label: "Defining quality standards",
       },
       {
-        id: 2,
-        label:
-          "Establish <u>data and measurement systems</u> to evaluate the performance of service providers against rating system as related to <dynamic>",
+        id: "establish-monitoring",
+        label: "Establish monitoring and enforcement",
       },
-      {
-        id: 3,
-        label:
-          "Provide <u>quality improvement support</u> to enable srvice providers to improve rating",
-      },
+      { id: "enhance-quality", label: "Enhance quality improvement supports" },
     ],
-    active: [1, 2, 5],
-  },
-];
-
-export const selectedOptions = [
-  {
-    id: 1,
-    label: "Defining quality standards, regulations",
-  },
-  {
-    id: 2,
-    label: "Data and measurement systems",
-  },
-  {
-    id: 3,
-    label: "Monitoring and enforcement",
-  },
-  {
-    id: 4,
-    label: "Financing mechanisms administration",
-  },
-  {
-    id: 5,
-    label: "Quality improvement supports",
-  },
-  {
-    id: 6,
-    label: "Workforce development supports",
+    info: "Developing a quality rating (and improvement) system based on independent assessments of multiple program elements that are combined into one or more summary measures expressed on a multipoint scale",
   },
 ];

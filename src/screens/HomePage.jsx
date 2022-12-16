@@ -9,8 +9,12 @@ export default function HomePage() {
   const { isShow } = state;
 
   return (
-    <div className="rows__box box">
-      {isShow ? <AddOption /> : <SliderOtions />}
+    <div className="app">
+      <div className="container">
+        <div className="main box">
+          {isShow ? <AddOption /> : <SliderOtions />}
+        </div>
+      </div>
     </div>
   );
 }

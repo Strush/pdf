@@ -1,6 +1,6 @@
 import { createContext, useReducer } from "react";
 
-export const Store = createContext([]);
+export const Store = createContext();
 
 const initialState = {
   isShow: true,
@@ -30,7 +30,7 @@ const reducer = (state, action) => {
     }
     case "SAVE_OPTIONS": {
       const allOptions = action.payload;
-      return { ...state, allOptions: [...state.allOptions, ...allOptions] };
+      return { ...state, allOptions: [...state.allOptions, allOptions] };
     }
     default:
       return state;

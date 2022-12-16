@@ -1,19 +1,15 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./screens/HomePage";
-import PdfPage from "./screens/PdfPage";
+import Pdf from "./screens/Pdf";
 
 function App() {
   return (
     <BrowserRouter>
-      {/* <div className="app">
-        <div className="container"> */}
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/pdf" element={<PdfPage />} />
+        <Route path="/" exact element={<HomePage />} />
+        <Route path="/pdf" element={<Pdf />} />
       </Routes>
-      {/* </div>
-      </div> */}
     </BrowserRouter>
   );
 }
